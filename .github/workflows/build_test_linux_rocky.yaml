@@ -32,7 +32,7 @@ jobs:
         MAKEFLAGS: "-j2"
 
     - name: Cache build directory
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ${{ github.workspace }}/build
         key: build-cache-rocky-${{ github.sha }}
@@ -63,7 +63,7 @@ jobs:
         MAKEFLAGS: "-j2"
 
     - name: Cache build directory
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ${{ github.workspace }}/build
         key: build-cache-rocky-${{ github.sha }}
@@ -94,7 +94,7 @@ jobs:
         MAKEFLAGS: "-j2"
 
     - name: Cache build directory
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ${{ github.workspace }}/build
         key: build-cache-rocky-profiling-${{ github.sha }}

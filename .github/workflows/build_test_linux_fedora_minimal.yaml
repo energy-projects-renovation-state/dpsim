@@ -32,7 +32,7 @@ jobs:
         MAKEFLAGS: "-j2"
 
     - name: Cache build directory
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ${{ github.workspace }}/build
         key: build-cache-fedora-minimal-${{ github.sha }}
