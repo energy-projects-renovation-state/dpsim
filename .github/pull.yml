@@ -4,3 +4,4 @@ rules:
   - base: master
     upstream: sogno-platform:master
     mergeMethod: hardreset
+    mergeUnstable: true  # Merge PRs even if their GitHub Actions workflows are failing
