@@ -50,7 +50,7 @@ jobs:
     #   run: docker build . --file packaging/Docker/Dockerfile.manylinux -t sogno/dpsim:manylinux
 
     - name: Build dpsim wheels for all supported python versions
-      uses: pypa/cibuildwheel@v2.18.0
+      uses: pypa/cibuildwheel@v2.19.1
       with:
         output-dir: dist
 
