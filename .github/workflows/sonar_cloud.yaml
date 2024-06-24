@@ -25,7 +25,7 @@ jobs:
       with:
         node-version: 20
     - name: Install sonar-scanner and build-wrapper
-      uses: sonarsource/sonarcloud-github-c-cpp@v2
+      uses: sonarsource/sonarcloud-github-c-cpp@v3
     - name: Create Build Folder
       run: mkdir build
     - name: Setup build directory cache
