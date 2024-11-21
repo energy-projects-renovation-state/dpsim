@@ -18,7 +18,7 @@ jobs:
 
       - name: Build and push
         id: docker_build_dev_rocky
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
          file: packaging/Docker/Dockerfile.dev-rocky
          push: true
@@ -38,7 +38,7 @@ jobs:
 
       - name: Build and push
         id: docker_build_release
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
          file: packaging/Docker/Dockerfile
          push: true
@@ -58,7 +58,7 @@ jobs:
 
       - name: Build and push
         id: docker_build_dev
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
          file: packaging/Docker/Dockerfile.dev
          push: true
@@ -78,7 +78,7 @@ jobs:
 
       - name: Build and push
         id: docker_build_dev
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
          file: packaging/Docker/Dockerfile.dev-minimal
          push: true
@@ -98,7 +98,7 @@ jobs:
 
       - name: Build and push
         id: docker_build_dev
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
          file: packaging/Docker/Dockerfile.manylinux
          push: true
