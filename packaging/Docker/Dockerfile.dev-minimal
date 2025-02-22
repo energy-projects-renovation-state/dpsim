@@ -1,4 +1,4 @@
-FROM fedora:36
+FROM fedora:42
 
 LABEL \
 	org.opencontainers.image.title = "DPsim" \
