@@ -1,4 +1,4 @@
-FROM fedora:34
+FROM fedora:43
 
 RUN dnf -y update
 
