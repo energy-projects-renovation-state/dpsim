@@ -16,7 +16,7 @@ RUN cmake ${CMAKE_OPTS} .. \
 	-DCPACK_GENERATOR=RPM
 RUN make ${MAKE_OPTS} package
 
-FROM fedora:36
+FROM fedora:43
 
 LABEL \
 	org.opencontainers.image.title = "DPsim" \
