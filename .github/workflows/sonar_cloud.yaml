@@ -39,7 +39,7 @@ jobs:
 
       - name: Setup Node 20
         if: steps.check_token.outputs.skip != 'true'
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 20
 
