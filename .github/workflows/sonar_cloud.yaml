@@ -45,7 +45,7 @@ jobs:
 
       - name: Install sonar-scanner and build-wrapper
         if: steps.check_token.outputs.skip != 'true'
-        uses: sonarsource/sonarcloud-github-c-cpp@v2
+        uses: sonarsource/sonarcloud-github-c-cpp@v3
 
       - name: Create Build Folder
         if: steps.check_token.outputs.skip != 'true'
