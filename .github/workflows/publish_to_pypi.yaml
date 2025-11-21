@@ -43,7 +43,7 @@ jobs:
         submodules: recursive
 
     - name: Build wheel
-      uses: pypa/cibuildwheel@v2.23.2
+      uses: pypa/cibuildwheel@v3.3.0
       env:
         CIBW_BUILD: "${{ matrix.python }}-${{ matrix.platform }}"
       with:
