@@ -23,7 +23,7 @@ jobs:
       run: mkdir build
 
     - name: Setup build directory cache
-      uses: actions/cache@v4
+      uses: actions/cache@v5
       with:
         path: ${{ github.workspace }}/build
         key: build-fedora-dir-cache-${{ github.ref }}
@@ -59,7 +59,7 @@ jobs:
       run: mkdir build
 
     - name: Setup build directory cache
-      uses: actions/cache@v4
+      uses: actions/cache@v5
       with:
         path: ${{ github.workspace }}/build
         key: build-fedora-dir-example-cache-${{ github.ref }}
@@ -168,7 +168,7 @@ jobs:
        path: ${{ github.workspace }}/notebooks-new
 
     - name: Download master notebook results
-      uses: actions/cache@v4
+      uses: actions/cache@v5
       with:
         path: ${{ github.workspace }}/notebooks-master
         key: notebook-output-cache-master-${{ github.sha }}
@@ -176,7 +176,7 @@ jobs:
           notebook-output-cache-master-
 
     - name: Download previous commit notebook results
-      uses: actions/cache@v4
+      uses: actions/cache@v5
       with:
         path: ${{ github.workspace }}/notebooks-previous
         key: notebook-output-cache-commit-${{ github.ref }}-${{ github.sha }}
