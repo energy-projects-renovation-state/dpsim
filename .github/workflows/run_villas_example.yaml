@@ -26,7 +26,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Restore build archive
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: build-cache-examples-cpp-${{ github.sha }}
           path: ${{ github.workspace }}/build
