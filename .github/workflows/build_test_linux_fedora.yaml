@@ -15,7 +15,7 @@ jobs:
     container: sogno/dpsim:dev
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         submodules: recursive
 
@@ -51,7 +51,7 @@ jobs:
     container: sogno/dpsim:dev
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         submodules: recursive
 
@@ -89,7 +89,7 @@ jobs:
     container: sogno/dpsim:dev
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
 
     - name: Restore build archive
       uses: actions/download-artifact@v4
@@ -241,7 +241,7 @@ jobs:
     container: sogno/dpsim:dev
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
 
     - name: Run cppcheck
       working-directory: ${{ github.workspace }}
