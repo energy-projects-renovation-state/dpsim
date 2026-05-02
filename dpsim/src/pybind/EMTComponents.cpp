@@ -564,4 +564,16 @@ void addEMTPh3Components(py::module_ mEMTPh3) {
                     createAttributeSetter<CPS::Matrix>("L"))
       .def_property("C", createAttributeGetter<CPS::Matrix>("C"),
                     createAttributeSetter<CPS::Matrix>("C"));
+
+  py::class_<CPS::EMT::Ph3::GenericTwoTerminalVTypeSSN,
+             std::shared_ptr<CPS::EMT::Ph3::GenericTwoTerminalVTypeSSN>,
+             CPS::SimPowerComp<CPS::Real>>(
+      mEMTPh3, "GenericTwoTerminalVTypeSSN", py::multiple_inheritance())
+      .def(py::init<std::string>())
+      .def(py::init<std::string, CPS::Logger::Level>())
+      .def("set_parameters",
+           &CPS::EMT::Ph3::GenericTwoTerminalVTypeSSN::setParameters, "A"_a,
+           "B"_a, "C"_a, "D"_a)
+      .def("connect", &CPS::EMT::Ph3::GenericTwoTerminalVTypeSSN::connect)
+      .def_property_readonly("x", createAttributeGetter<CPS::Matrix>("x"));
 }
