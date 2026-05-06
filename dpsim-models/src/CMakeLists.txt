@@ -63,6 +63,9 @@ list(APPEND MODELS_SOURCES
 	# DP/DP_Ph3_SynchronGeneratorVBR.cpp
 	# DP/DP_Ph3_SynchronGeneratorVBRStandalone.cpp
 
+	EMT/EMT_SSNComp.cpp
+	EMT/EMT_VTypeSSNComp.cpp
+
 	EMT/EMT_Ph1_Capacitor.cpp
 	EMT/EMT_Ph1_CurrentSource.cpp
 	EMT/EMT_Ph1_Inductor.cpp
@@ -112,6 +115,8 @@ list(APPEND MODELS_SOURCES
 	EMT/EMT_Ph3_SSN_Capacitor.cpp
 	EMT/EMT_Ph3_SSN_Inductor.cpp
 	EMT/EMT_Ph3_SSN_Full_Serial_RLC.cpp
+	EMT/EMT_Ph3_GenericTwoTerminalVTypeSSN.cpp
+	EMT/EMT_Ph3_TwoTerminalVTypeSSNComp.cpp
 
 	SP/SP_Ph1_VoltageSource.cpp
 	SP/SP_Ph1_Capacitor.cpp

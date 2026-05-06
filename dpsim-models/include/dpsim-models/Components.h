@@ -84,6 +84,10 @@
 #ifdef WITH_SUNDIALS
 #include <dpsim-models/DP/DP_Ph3_SynchronGeneratorDQODE.h>
 #endif
+
+#include <dpsim-models/EMT/EMT_SSNComp.h>
+#include <dpsim-models/EMT/EMT_VTypeSSNComp.h>
+
 #include <dpsim-models/EMT/EMT_Ph1_Capacitor.h>
 #include <dpsim-models/EMT/EMT_Ph1_CurrentSource.h>
 #include <dpsim-models/EMT/EMT_Ph1_Inductor.h>
@@ -103,6 +107,7 @@
 #include <dpsim-models/EMT/EMT_Ph3_ControlledCurrentSource.h>
 #include <dpsim-models/EMT/EMT_Ph3_ControlledVoltageSource.h>
 #include <dpsim-models/EMT/EMT_Ph3_CurrentSource.h>
+#include <dpsim-models/EMT/EMT_Ph3_GenericTwoTerminalVTypeSSN.h>
 #include <dpsim-models/EMT/EMT_Ph3_Inductor.h>
 #include <dpsim-models/EMT/EMT_Ph3_ReducedOrderSynchronGeneratorVBR.h>
 #include <dpsim-models/EMT/EMT_Ph3_Resistor.h>
@@ -119,6 +124,7 @@
 #include <dpsim-models/EMT/EMT_Ph3_SynchronGenerator6bOrderVBR.h>
 #include <dpsim-models/EMT/EMT_Ph3_SynchronGeneratorDQ.h>
 #include <dpsim-models/EMT/EMT_Ph3_SynchronGeneratorDQTrapez.h>
+#include <dpsim-models/EMT/EMT_Ph3_TwoTerminalVTypeSSNComp.h>
 #include <dpsim-models/EMT/EMT_Ph3_VoltageSource.h>
 #include <dpsim-models/EMT/EMT_Ph3_VoltageSourceNorton.h>
 #ifdef WITH_SUNDIALS
