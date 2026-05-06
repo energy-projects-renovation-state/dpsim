@@ -8,10 +8,11 @@ public:
   Example_VS_RLBranch_RLCLoad()
       : mTimeStep(0.0001), mFinalTime(0.2), mFrequency(50.0),
         mSourceVoltage(CPS::Math::polar(1.0, 0.0)),
-        mIdentity3(Matrix::Identity(3, 3)), mBranchResistance(0.2 * mIdentity3),
-        mBranchInductance(0.02 * mIdentity3), mLoadResistance(1.0 * mIdentity3),
-        mLoadInductance(0.05 * mIdentity3),
-        mLoadCapacitance(100e-6 * mIdentity3) {}
+        mBranchResistance(CPS::Math::singlePhaseParameterToThreePhase(0.2)),
+        mBranchInductance(CPS::Math::singlePhaseParameterToThreePhase(0.02)),
+        mLoadResistance(CPS::Math::singlePhaseParameterToThreePhase(1.0)),
+        mLoadInductance(CPS::Math::singlePhaseParameterToThreePhase(0.05)),
+        mLoadCapacitance(CPS::Math::singlePhaseParameterToThreePhase(100e-6)) {}
 
   void runExampleWithMNAComponents() const {
     String simName = "EMT_Ph3_MNAComponents";
@@ -218,7 +219,7 @@ private:
     bMatrix.block(3, 0, 3, 3) = inverseInductance;
 
     cMatrix = Matrix::Zero(3, 6);
-    cMatrix.block(0, 3, 3, 3) = mIdentity3;
+    cMatrix.block(0, 3, 3, 3) = Matrix::Identity(3, 3);
 
     dMatrix = Matrix::Zero(3, 3);
   }
@@ -249,8 +250,6 @@ private:
   Real mFinalTime;
   Real mFrequency;
   Complex mSourceVoltage;
-
-  Matrix mIdentity3;
 
   Matrix mBranchResistance;
   Matrix mBranchInductance;
