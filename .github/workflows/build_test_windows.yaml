@@ -26,7 +26,7 @@ jobs:
         mkdir build
 
     - name: Setup build directory cache
-      uses: actions/cache@v5
+      uses: actions/cache@v6
       with:
         path: ${{ github.workspace }}/build
         key: build-windows-cache-${{ github.ref }}
@@ -53,7 +53,7 @@ jobs:
         mkdir build
 
     - name: Setup build directory cache
-      uses: actions/cache@v5
+      uses: actions/cache@v6
       with:
         path: ${{ github.workspace }}/build
         key: build-windows-bindings-cache-${{ github.ref }}
