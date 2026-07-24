@@ -35,7 +35,7 @@ jobs:
             "$PR_NUMBER" "$BASE_SHA" "$HEAD_SHA" > pr-meta/meta.json
 
       - name: Upload PR metadata
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: llm-review-pr-meta
           path: pr-meta/meta.json
