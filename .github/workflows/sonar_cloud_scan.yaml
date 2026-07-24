@@ -86,7 +86,7 @@ jobs:
 
       - name: Run sonar-scanner (pull request)
         if: steps.meta.outputs.event_name == 'pull_request'
-        uses: SonarSource/sonarqube-scan-action@v8.1.0
+        uses: SonarSource/sonarqube-scan-action@v8.2.1
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: https://sonarcloud.io
@@ -102,7 +102,7 @@ jobs:
 
       - name: Run sonar-scanner (branch)
         if: steps.meta.outputs.event_name == 'push'
-        uses: SonarSource/sonarqube-scan-action@v8.1.0
+        uses: SonarSource/sonarqube-scan-action@v8.2.1
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: https://sonarcloud.io
