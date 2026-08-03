@@ -31,7 +31,7 @@ jobs:
           ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
 
       - name: Install sonar-scanner and build-wrapper
-        uses: SonarSource/sonarqube-scan-action/install-build-wrapper@v8.1.0
+        uses: SonarSource/sonarqube-scan-action/install-build-wrapper@v8.2.1
 
       - name: Create Build Folder
         run: mkdir build
