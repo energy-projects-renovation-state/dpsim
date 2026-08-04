@@ -44,7 +44,7 @@ jobs:
       # Metadata comes from trusted workflow_run context, not the PR artifact.
       - name: Resolve analysis metadata
         id: meta
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const run = context.payload.workflow_run;
