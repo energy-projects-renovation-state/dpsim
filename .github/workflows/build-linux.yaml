@@ -74,7 +74,7 @@ jobs:
         run: mkdir -p build
 
       - name: Setup compiler cache
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: ${{ github.workspace }}/.ccache
           key: ccache-${{ matrix.key }}-${{ github.sha }}
