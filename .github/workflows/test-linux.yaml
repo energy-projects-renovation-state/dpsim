@@ -84,7 +84,7 @@ jobs:
           ${{ github.workspace }}/src/**/*.cpp
 
     - name: Upload coverage report
-      uses: codecov/codecov-action@v6
+      uses: codecov/codecov-action@v7
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
         slug: sogno-platform/dpsim
