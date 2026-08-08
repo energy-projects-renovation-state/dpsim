@@ -101,7 +101,7 @@ jobs:
        path: ${{ github.workspace }}/notebooks-new
 
     - name: Download master notebook results
-      uses: actions/cache@v5
+      uses: actions/cache@v6
       with:
         path: ${{ github.workspace }}/notebooks-master
         key: notebook-output-cache-master-${{ github.sha }}
@@ -109,7 +109,7 @@ jobs:
           notebook-output-cache-master-
 
     - name: Download previous commit notebook results
-      uses: actions/cache@v5
+      uses: actions/cache@v6
       with:
         path: ${{ github.workspace }}/notebooks-previous
         key: notebook-output-cache-commit-${{ github.ref }}-${{ github.sha }}
