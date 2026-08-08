@@ -27,7 +27,7 @@ jobs:
             targets: --target dpsimpy
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Create build folder
         run: mkdir ${{ github.workspace }}/build

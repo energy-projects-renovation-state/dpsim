@@ -39,7 +39,7 @@ jobs:
       image_minimal: ${{ steps.images.outputs.minimal }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Detect changed image definitions
         id: filter
