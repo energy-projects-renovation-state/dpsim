@@ -30,7 +30,7 @@ jobs:
     container: ${{ inputs.image }}
     steps:
     - name: Checkout
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
       with:
         ref: ${{ inputs.ref }}
         allow-unsafe-pr-checkout: true
@@ -73,7 +73,7 @@ jobs:
       contents: write
 
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v7
       with:
         ref: ${{ inputs.ref }}
         allow-unsafe-pr-checkout: true
@@ -127,7 +127,7 @@ jobs:
     needs: [generate-reference]
 
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v7
       with:
         ref: ${{ inputs.ref }}
         allow-unsafe-pr-checkout: true
