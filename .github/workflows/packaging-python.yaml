@@ -78,7 +78,7 @@ jobs:
       run: python scripts/set_dev_version.py pyproject.toml ${{ github.run_number }}
 
     - name: Build wheel
-      uses: pypa/cibuildwheel@v3.4.1
+      uses: pypa/cibuildwheel@v4.2.0
       env:
         CIBW_BUILD: "${{ matrix.python }}-${{ matrix.platform }}"
       with:
