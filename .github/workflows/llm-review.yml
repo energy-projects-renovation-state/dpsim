@@ -49,7 +49,7 @@ jobs:
         # head is deliberately NOT checked out.
 
       - name: Download PR metadata from the collect run
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: llm-review-pr-meta
           run-id: ${{ github.event.workflow_run.id }}
