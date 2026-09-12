@@ -46,7 +46,7 @@ jobs:
         include: ${{ fromJSON(inputs.base_images) }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: ${{ inputs.ref }}
           allow-unsafe-pr-checkout: true
@@ -84,7 +84,7 @@ jobs:
         include: ${{ fromJSON(inputs.derived_images) }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: ${{ inputs.ref }}
           allow-unsafe-pr-checkout: true
