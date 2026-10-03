@@ -44,7 +44,7 @@ jobs:
     runs-on: ${{ vars.LLM_REVIEW_RUNNER || 'ubuntu-latest' }}
     steps:
       - name: Checkout base repository (trusted code only)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         # Default checkout: the base repo's default branch. The pull request's
         # head is deliberately NOT checked out.
 
