@@ -59,7 +59,7 @@ jobs:
           -C "$GITHUB_WORKSPACE" .
 
       - name: Upload workspace artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: sonar-workspace
           path: /tmp/sonar-workspace.tgz
