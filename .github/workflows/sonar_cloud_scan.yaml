@@ -76,7 +76,7 @@ jobs:
       - name: Setup Node 24
         uses: actions/setup-node@v6
         with:
-          node-version: 24
+          node-version: 26
 
       # Cache only on trusted push runs; a PR workspace could seed a poisoned cache.
       - name: Setup sonar cache
